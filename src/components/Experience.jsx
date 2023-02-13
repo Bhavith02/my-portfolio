@@ -4,6 +4,7 @@ import css from '../assets/css.png'
 import javascript from '../assets/javascript.png'
 import reactImage from '../assets/react.png'
 import node from '../assets/node.png'
+import mysql from '../assets/mysql.png'
 import mongodb from '../assets/mongodb.png'
 import svelte from '../assets/svelte.png'
 import github from '../assets/github.png'
@@ -63,6 +64,12 @@ const Experience = () => {
         },
         {
             id: 9,
+            src: mysql,
+            title: 'MySQL',
+            style: 'shadow-blue-500'
+        },
+        {
+            id: 10,
             src: github,
             title: 'GitHub',
             style: 'shadow-gray-400'
@@ -77,7 +84,7 @@ const Experience = () => {
                 <p className='py-6'>These are the technologies I have worked with</p>
             </div>
 
-            <div className='w-full grid grid-cols-3 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
+            <div className='w-full grid grid-cols-3 gap-4 text-center py-8 px-12 sm:px-0'>
                 {
                     techs.map(({id,src,title,style})=>(
                         <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
