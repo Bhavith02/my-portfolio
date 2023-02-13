@@ -14,8 +14,9 @@ const Home = () => {
                 <p className='text-gray-400 py-4'>
                     I have 3 years of learning experience in building 
                     and designing websites.
-                    Recently, I have worked in a start up company RenderPub.
-                    There I worked on svelte technology to build their website.
+                    I have built various personal projects, some of 
+                    which have been listed below.
+                    Recently I've worked with modern technologies such as svelte and three JS under Web3.
                     Currently, I am learning and exploring more on web technologies.
                 </p>
 

@@ -17,7 +17,10 @@ const About = () => {
             </p>
             <br/>
             <p className='text-xl'>
-
+                I stepped into development field by taking a python course in udemy and built
+                some amazing real world applications. And then got into web development and learnt
+                to build some websites and projects. And then got into couple of internships, had an opportunity to contribute there.
+                Even now I keep learning and exploring new technologies that excites me.
             </p>
         </div>
     </div>
