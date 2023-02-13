@@ -45,7 +45,7 @@ const NavBar = () => {
                 </>
             ),
             href:'https://linkedin.com/in/s-bhavith-070202',
-            style: 'rounded-tr-md'
+            style: 'rounded-tl-md rounded-tr-md'
         },
         {
             id:2,
@@ -73,7 +73,7 @@ const NavBar = () => {
                 </>
             ),
             href:'/resume.pdf',
-            style:'rounded-br-md',
+            style:'rounded-bl-md rounded-br-md',
             download:true,
         },
         
@@ -113,7 +113,7 @@ const NavBar = () => {
                 ))} 
 
                 {links2.map(({id,child,href,style,download})=>(
-                    <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500  " + style}>
+                    <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 hover:scale-105 hover:rounded-md duration-300 bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer  " + style}>
                         <a href={href} className='flex justify-between items-center w-full text-white' download={download} target='_blank' rel='noreferrer'>
                             {child}
                         </a>

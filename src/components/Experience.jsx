@@ -3,8 +3,9 @@ import html from '../assets/html.png'
 import css from '../assets/css.png'
 import javascript from '../assets/javascript.png'
 import reactImage from '../assets/react.png'
-import nextjs from '../assets/nextjs.png'
-import graphql from '../assets/graphql.png'
+import node from '../assets/node.png'
+import mongodb from '../assets/mongodb.png'
+import svelte from '../assets/svelte.png'
 import github from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
 
@@ -44,18 +45,24 @@ const Experience = () => {
         },
         {
             id: 6,
-            src: nextjs,
-            title: 'Next JS',
-            style: 'shadow-white'
+            src: node,
+            title: 'Node JS',
+            style: 'shadow-green-500'
         },
         {
             id: 7,
-            src: graphql,
-            title: 'GraphQL',
-            style: 'shadow-pink-400'
+            src: svelte,
+            title: 'Svelte',
+            style: 'shadow-orange-700'
         },
         {
             id: 8,
+            src: mongodb,
+            title: 'Mongo DB',
+            style: 'shadow-green-700'
+        },
+        {
+            id: 9,
             src: github,
             title: 'GitHub',
             style: 'shadow-gray-400'
