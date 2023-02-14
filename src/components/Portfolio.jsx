@@ -1,10 +1,11 @@
 import React from 'react'
 import myfirstwebpage from '../assets/portfolio/myfirstwebpage.jpg'
-import installNode from '../assets/portfolio/installNode.jpg'
+import menu3 from '../assets/portfolio/menu3.jpg'
 import simon from '../assets/portfolio/simon.jpg'
 import drumkit from '../assets/portfolio/drumkit.jpg'
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
+import menu1 from '../assets/portfolio/menu1.jpg'
+import menu4 from '../assets/portfolio/menu4.jpg'
+import menu2 from '../assets/portfolio/menu2.jpg'
 
 
 const Portfolio = () => {
@@ -24,22 +25,33 @@ const Portfolio = () => {
         },{
             id: 3,
             src:simon,
-            demo:'https://fancy-biscochitos-41c95a.netlify.app/',
+            demo:'https://bhavith02.github.io/SimonGame/',
             code:'https://github.com/Bhavith02/SimonGame'
         },{
             id: 4,
-            src:reactSmooth
+            src:menu1,
+            demo:'https://bhavith02.github.io/menu-project1/',
+            code:'https://github.com/Bhavith02/menu-project1'
         },{
             id: 5,
-            src:installNode
+            src:menu3,
+            demo:'https://bhavith02.github.io/menu-project3/',
+            code:'https://github.com/Bhavith02/menu-project3'
         },{
             id: 6,
-            src:reactWeather
+            src:menu4,
+            demo:'https://bhavith02.github.io/menu-project4/',
+            code:'https://github.com/Bhavith02/menu-project4'
+        },{
+            id: 7,
+            src:menu2,
+            demo:'https://bhavith02.github.io/menu-project2/',
+            code:'https://github.com/Bhavith02/menu-project2'
         },
     ]
 
   return (
-    <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
+    <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full pb-8'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
