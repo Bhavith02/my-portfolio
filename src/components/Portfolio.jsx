@@ -1,8 +1,8 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
+import myfirstwebpage from '../assets/portfolio/myfirstwebpage.jpg'
 import installNode from '../assets/portfolio/installNode.jpg'
-import navbar from '../assets/portfolio/navbar.jpg'
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
+import simon from '../assets/portfolio/simon.jpg'
+import drumkit from '../assets/portfolio/drumkit.jpg'
 import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
 import reactWeather from '../assets/portfolio/reactWeather.jpg'
 
@@ -12,14 +12,20 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 1,
-            src:arrayDestruct
+            src:myfirstwebpage,
+            demo:'https://bhavith02.github.io/cv2/',
+            code:'https://github.com/Bhavith02/cv2'
         },
         {
             id: 2,
-            src:reactParallax
+            src:drumkit,
+            demo:'https://bhavith02.github.io/InstrumentSound/',
+            code:'https://github.com/Bhavith02/InstrumentSound'
         },{
             id: 3,
-            src:navbar
+            src:simon,
+            demo:'https://fancy-biscochitos-41c95a.netlify.app/',
+            code:'https://github.com/Bhavith02/SimonGame'
         },{
             id: 4,
             src:reactSmooth
@@ -42,12 +48,12 @@ const Portfolio = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
             {
-                portfolio.map(({id,src})=>(
+                portfolio.map(({id,src,demo,code})=>(
                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                         <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
                         <div className='flex items-center justify-center'>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                            <a href={demo} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' target='_blank' rel='noreferrer'>Demo</a>
+                            <a href={code} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' target='_blank' rel='noreferrer'>Code</a>
                         </div>
                     </div>
                 ))
