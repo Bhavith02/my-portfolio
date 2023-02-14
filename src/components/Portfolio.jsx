@@ -1,12 +1,13 @@
 import React from 'react'
 import myfirstwebpage from '../assets/portfolio/myfirstwebpage.jpg'
-import menu3 from '../assets/portfolio/menu3.jpg'
-import simon from '../assets/portfolio/simon.jpg'
 import drumkit from '../assets/portfolio/drumkit.jpg'
+import simon from '../assets/portfolio/simon.jpg'
 import menu1 from '../assets/portfolio/menu1.jpg'
-import menu4 from '../assets/portfolio/menu4.jpg'
 import menu2 from '../assets/portfolio/menu2.jpg'
-
+import menu3 from '../assets/portfolio/menu3.jpg'
+import menu4 from '../assets/portfolio/menu4.jpg'
+import todo from '../assets/portfolio/todo.jpg'
+import stock from '../assets/portfolio/stock.jpg'
 
 const Portfolio = () => {
 
@@ -47,7 +48,15 @@ const Portfolio = () => {
             src:menu2,
             demo:'https://bhavith02.github.io/menu-project2/',
             code:'https://github.com/Bhavith02/menu-project2'
-        },
+        },{
+            id:8,
+            src:todo,
+            code:'https://github.com/Bhavith02/To-do-list'
+        },{
+            id:9,
+            src:stock,
+            code:'https://github.com/Bhavith02/CollegeStockVerification'
+        }
     ]
 
   return (
